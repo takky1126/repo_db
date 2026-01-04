@@ -1,0 +1,171 @@
+\documentclass[12pt]{ltjarticle}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{here}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{fontspec}
+\usepackage{luatexja-fontspec} % 明示的に読み込む
+\usepackage{luatexja}
+\usepackage{titlesec}
+\usepackage{subcaption}
+\usepackage{listings}
+
+% ========== listings の設定 ==========
+\lstset{
+  % フレーム (枠線) の指定：上 (t) と 下 (b) の線だけ
+  frame=tb, 
+  % 枠線とコードの間の余白
+  framesep=5pt, 
+  % 等幅フォントで表示
+  basicstyle=\ttfamily\small, 
+  % 行番号を左側に表示
+  numbers=left,
+  % 行番号の書式を小さく（tiny）する
+  numberstyle=\tiny, 
+  % 行番号とコードの間のスペース
+  numbersep=5pt, 
+  % 行番号の増分 (1行ごと)
+  stepnumber=1, 
+}
+
+% \usepackage{array}
+% \usepackage{booktabs}
+% \geometry{margin=20mm}
+\titleformat{\section}[block]
+  {\normalfont\LARGE\bfseries}
+  {第\thesection 章}{1em}{}
+
+\setmainfont{ipaexm.ttf} % 日本語フォント（IPAex明朝）を指定 ※ XeLaTeX or LuaLaTeXが必要
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm} % 余白設定
+\renewcommand{\baselinestretch}{1.2} % 行間を1.2倍に設定
+
+\counterwithin{figure}{section} % 図番号を「1.1」のようにセクションと連動
+\counterwithin{table}{section}  % 表番号も同様にセクションと連動
+
+\makeatletter
+% section 再定義（改ページなし・見た目調整）
+\renewcommand{\section}{%
+  \@startsection{section}{1}{\z@}%
+  {-2.5ex \@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus.2ex}%
+  {\normalfont\LARGE\bfseries\raggedright}%
+}
+
+% subsection 再定義（見た目だけ調整，番号はそのまま）
+\renewcommand{\subsection}{%
+  \@startsection{subsection}{2}{\z@}%
+  {-1.5ex \@plus -0.5ex \@minus -.2ex}%
+  {1ex \@plus .2ex}%
+  {\normalfont\large\bfseries\raggedright}%
+}
+
+% section 番号だけ「第n章」に変更
+\renewcommand{\thesection}{第\arabic{section}章}
+
+% subsection 番号は従来の n.m 形式を保つ（これが重要）
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\makeatother
+
+\makeatletter
+% 表番号を「2.1」「2.2」のようにセクション番号と連動
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+% キャプションの前に「表」を表示
+\renewcommand{\tablename}{表}
+% 参照の際にも「表」と表示
+\renewcommand{\refname}{\tablename}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\figurename}{図}
+\makeatother
+
+% キャプションの書式設定
+\captionsetup[figure]{labelfont={bf}, labelsep=space, font=small}  % キャプションを小さくし，「図」を太字に設定
+
+% タイトルと著者の設定
+\title{\huge 第5章　サイバーセキュリティ基礎実験2}
+\author{\large 3年情報工学科 19番 瀧口大地}
+  
+\date{} % 日付を空にする
+
+\begin{document}
+
+  \begin{titlepage}
+    \vspace*{\fill}
+    \begin{center}
+      {\Large 「好きなもの」のデータベースWebアプリケーション}\\
+      \vspace{0.5\baselineskip}
+      {\Huge 積みゲー管理アプリ}
+    \end{center}
+
+    \vspace{2cm}
+    \begin{LARGE}
+      \begin{center}
+        3年 情報工学科 19番 瀧口大地
+      \end{center}
+    \end{LARGE}
+
+    \begin{large}
+    \vspace{1.5cm}
+    \begin{flushleft}
+      \normalsize
+      提出期限: 2026年2月15日23:59\\
+      提出日: 2026年2月15日23:59
+    \end{flushleft}
+
+    \vspace{1cm}
+    \begin{flushleft}
+      　\\
+      　\\
+      　\\
+      　\\
+      　\\
+      　\\
+      　\\
+      　\\
+      　\\
+    \end{flushleft}
+    \end{large}
+
+    \vspace*{\fill}
+  \end{titlepage}
+
+  \clearpage
+  \setcounter{page}{1}
+  \pagestyle{plain}
+  
+  \newpage
+  \noindent
+  % \setcounter{page}{1}
+  \section{目的}
+  
+  \newpage
+  \noindent
+  \section{Webインターフェースの設計}
+  \newpage
+  \noindent
+  \section{データベースの設計}
+  \newpage
+  \noindent
+  \section{実装スケジュール}
+  \newpage
+  \noindent
+  \section{まとめ}
+
+  \newpage
+  \begin{huge}
+    参考文献\\\\
+  \end{huge}
+  % \noindent[]ページ名，\url{}，2025年12/25参照．\\
+
+  \newpage
+  \begin{huge}
+    感想\\\
+  \end{huge}
+  % \noindent[]ページ名，\url{}，2025年12/25参照．\\
+\end{document}
