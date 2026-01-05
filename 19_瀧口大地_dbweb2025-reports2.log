@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.6.15)  4 JAN 2026 18:35
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.6.15)  5 JAN 2026 20:22
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/takky/Downloads/repo_db/19_瀧口大地_dbweb2025-reports2.tex
@@ -1075,6 +1075,26 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <20.74> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 145.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 19.95642pt on input line 145.
+Package microtype Info: Character `quotesinglbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `quotedblbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglleft ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglright ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 148.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 148.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 148.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 148.
 
 
 [1
@@ -1092,24 +1112,98 @@ Package microtype Info: Character `guilsinglleft ' is missing
 Package microtype Info: Character `guilsinglright ' is missing
 (microtype)             in font `TU/ipaexm.ttf(0)/b/n/20.74'.
 (microtype)             Ignoring protrusion settings for this character.
+<datas/Webアプリ初期画面.png, id=12, 718.93594pt x 665.48625pt>
+File: datas/Webアプリ初期画面.png Graphic file (type png)
+<use datas/Webアプリ初期画面.png>
+Package luatex.def Info: datas/Webアプリ初期画面.png  used on input line 174.
+(luatex.def)             Requested size: 450.69417pt x 417.19719pt.
+Package microtype Info: Character `quotesinglbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `quotedblbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglleft ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglright ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 175.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 175.
+Package microtype Info: Character `quotesinglbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `quotedblbase ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglleft ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglright ' is missing
+(microtype)             in font `TU/ipaexm.ttf(0)/b/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10.95> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 175.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 175.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10.95> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 175.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 175.
+<datas/Webアプリ初期入力.png, id=13, 687.31781pt x 126.4725pt>
+File: datas/Webアプリ初期入力.png Graphic file (type png)
+<use datas/Webアプリ初期入力.png>
+Package luatex.def Info: datas/Webアプリ初期入力.png  used on input line 186.
+(luatex.def)             Requested size: 450.69417pt x 82.93175pt.
 
 
-[2]
+[2<./datas/Webアプリ初期画面.png>]
+<datas/Webアプリ初期出力.png, id=18, 690.32906pt x 337.26pt>
+File: datas/Webアプリ初期出力.png Graphic file (type png)
+<use datas/Webアプリ初期出力.png>
+Package luatex.def Info: datas/Webアプリ初期出力.png  used on input line 193.
+(luatex.def)             Requested size: 450.69417pt x 220.18903pt.
+<datas/Webアプリ追加入力.png, id=19, 685.8122pt x 192.72pt>
+File: datas/Webアプリ追加入力.png Graphic file (type png)
+<use datas/Webアプリ追加入力.png>
+Package luatex.def Info: datas/Webアプリ追加入力.png  used on input line 207.
+(luatex.def)             Requested size: 450.69417pt x 126.6545pt.
+<datas/Webアプリ追加出力.png, id=20, 686.565pt x 217.5628pt>
+File: datas/Webアプリ追加出力.png Graphic file (type png)
+<use datas/Webアプリ追加出力.png>
+Package luatex.def Info: datas/Webアプリ追加出力.png  used on input line 214.
+(luatex.def)             Requested size: 450.69417pt x 142.81839pt.
 
-[3]
 
-[4]
+[3<./datas/Webアプリ初期入力.png><./datas/Webアプリ初期出力.png><./datas/Webアプリ追加入力.png>]
+<datas/Webアプリ別画面.png, id=27, 694.09312pt x 277.035pt>
+File: datas/Webアプリ別画面.png Graphic file (type png)
+<use datas/Webアプリ別画面.png>
+Package luatex.def Info: datas/Webアプリ別画面.png  used on input line 231.
+(luatex.def)             Requested size: 450.69417pt x 179.89307pt.
+<datas/Webアプリ使用感.png, id=28, 698.61pt x 674.52pt>
+File: datas/Webアプリ使用感.png Graphic file (type png)
+<use datas/Webアプリ使用感.png>
+Package luatex.def Info: datas/Webアプリ使用感.png  used on input line 240.
+(luatex.def)             Requested size: 450.69417pt x 435.15985pt.
 
-[5]
+
+[4<./datas/Webアプリ追加出力.png><./datas/Webアプリ別画面.png>]
+
+[5<./datas/Webアプリ使用感.png>]
 
 [6]
 
-Package caption Warning: Unused \captionsetup[figure] on input line 88.
-See the caption package documentation for explanation.
+[7]
 
+[8]
 
+[9]
 
-[7] (./19_瀧口大地_dbweb2025-reports2.aux)
+[10] (./19_瀧口大地_dbweb2025-reports2.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1121,19 +1215,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13140 strings out of 470203
+ 13248 strings out of 470203
  125244,794899 words of node,token memory allocated
  1214 words of node memory still in use:
    11 hlist, 2 vlist, 6 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 2 glyph, 247 attribute, 57 glue_spec, 34 attribute_list, 1 write, 14 user_defined nodes
-   avail lists: 1:9,2:4736,3:86,4:68,5:25,6:28,7:588,8:4,9:218,10:18,11:1
- 41176 multiletter control sequences out of 65536+600000
- 34 fonts using 47429951 bytes
- 119i,5n,115p,1843b,277s stack positions out of 10000i,1000n,20000p,200000b,200000s
+   avail lists: 1:9,2:20688,3:164,4:120,5:49,6:28,7:2296,8:4,9:1064,10:18,11:10
+ 41263 multiletter control sequences out of 65536+600000
+ 38 fonts using 60787583 bytes
+ 119i,6n,115p,1843b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2025/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on 19_瀧口大地_dbweb2025-reports2.pdf (8 pages, 175459 bytes).
+Output written on 19_瀧口大地_dbweb2025-reports2.pdf (11 pages, 440371 bytes).
 
-PDF statistics: 50 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

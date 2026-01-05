@@ -143,10 +143,107 @@
   \noindent
   % \setcounter{page}{1}
   \section{目的}
-  
+  今回私が「積みゲー管理アプリ」を作ろうと思った目的として，背景と解決手段を以下に示す．
+
+  \subsection{背景}
+  ここ最近，ゲームストアの革新的なセールや有料ゲームの期間限定無料配布により，私の
+  PCに大量のゲームがインストールされた．量が量である故，購入して未プレイのゲーム，
+  所謂「積みゲー」が増加してしまっている．複数のゲームを楽しんでいるとどうしても
+  進行状況やプレイ時間などの進行度を忘れてしまう．これらの現象が頻発すると，せっかくの
+  ゲームを最高に楽しむことが難しくなってくる．私はこれを強く問題視した．
+
+  \subsection{解決手段}
+  私は今上げた問題の解決手段として，シンプルなものを思いついた．記録である．
+  忘れてしまったり薄れてしまう情報の対策として，記録と確認は絶大な効果がある．
+  高専の方々に伝わりやすい例で言うと，githubのコミットで変更点や現状の説明を
+  文章として保存する，ああいった記録を本問題の解決手段として用いる．
+  システムとしてはPHPとCSVを用いてゲームごとの進行ログ（日記）を保存できる
+  Webアプリを開発する．累計時間や現在のステータス，過去のプレイ履歴を振り返る
+  機能を持たせることで，モチベーションの維持や効率的で高い質のゲームプレイを提供する．
+
   \newpage
   \noindent
   \section{Webインターフェースの設計}
+  Webインターフェースについて，Webアプリの概要とUIやUXなどの細かい工夫に分けて述べる．
+  
+  \subsection{Webアプリの概要}
+  本システムにアクセスするとまず図\ref{Webアプリ初期画面}のようになっている．
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ初期画面.png}
+    \caption{Webアプリ初期画面}
+    \label{Webアプリ初期画面}
+  \end{figure}
+
+  ADD\_NEW\_GAMEのTITLEにゲームのタイトル，LENGTHにゲームのクリアにかかるであろう時間
+  を入力する．その後ENTERキーの押下またはREGISTERボタンで初期入力は完了である．
+  図\ref{Webアプリ初期入力}のように入力しENTERキーを押すと図\ref{Webアプリ初期出力}
+  のようにADD\_NEW\_GAMEの下にゲームが1つのブロックとして記録される．
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ初期入力.png}
+    \caption{Webアプリ初期入力}
+    \label{Webアプリ初期入力}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ初期出力.png}
+    \caption{Webアプリ初期出力}
+    \label{Webアプリ初期出力}
+  \end{figure}
+
+  図\ref{Webアプリ初期出力}からわかるように，出力されたブロックにさらに入力がある．
+  ゲームを進めて進捗があった時，ここに図\ref{Webアプリ追加入力}のようにSTATUS
+  を「プレイ中」とし，LOG\_COMMENTに感想や進捗コメント，プレイ時間を入力する．
+  UPDATEボタンを押すと，図\ref{Webアプリ追加出力}のようにSTATUSが変化し
+  現状のプレイ時間が記録される．また，いつどんな体験をしたのかが一目でわかるように
+  ゲームごとに履歴が保存できるようになっている．
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ追加入力.png}
+    \caption{Webアプリ追加入力}
+    \label{Webアプリ追加入力}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ追加出力.png}
+    \caption{Webアプリ追加出力}
+    \label{Webアプリ追加出力}
+  \end{figure}
+
+  以上により，本Webアプリのメイン処理の説明は完了である．ただ，
+  図\ref{Webアプリ初期画面}の画面右上にDATA\_PAGEボタン，DOWLOAD\_ALLボタンが
+  あることがわかる．DOWLOAD\_ALLボタンはその名の通り現状のゲーム状況をまとめた
+  データベースのCSVファイルを全てダウンロードする，というものである．
+  DATA\_PAGEボタンを押下すると図\ref{Webアプリ別画面}のようにページが遷移し，
+  各データベースのテーブルを閲覧できるようになっている．図内の「progress\_1767609780.csv」
+  は，先ほど登録したシルクソングというゲームの進捗を記録したテーブルを示している．
+  1767609780はgames.csvで定義されたIDであり，詳しくはデータベース設計で後述するが
+  ゲームごとにそれぞれ進捗をまとめられるようにしている．
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ別画面.png}
+    \caption{Webアプリ別画面}
+    \label{Webアプリ別画面}
+  \end{figure}
+  
+  最後に本Webアプリの使用感を示すために他のゲームも追加した画面を載せておく．
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{datas/Webアプリ使用感.png}
+    \caption{Webアプリ使用感}
+    \label{Webアプリ使用感}
+  \end{figure}
+
+  \subsection{UIやUXの細かい工夫}
+
   \newpage
   \noindent
   \section{データベースの設計}
